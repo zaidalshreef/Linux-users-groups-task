@@ -1,0 +1,36 @@
+    1  adduser ali
+    2  adduser -c "HR,manager" -e 2025-1-1 ali
+    3  adduser -c "HR,manager" -e2025-1-1 ali
+    4  adduser -c"HR,manager" -e 2025-1-1 ali
+    5  adduser ali
+    6  useradd ali 
+    7  adduser zaid
+    8  cd /etc/passwd
+    9  /etc/passwd
+   10  sudo /etc/passwd
+   11  sudo cd  /etc/passwd
+   12  cd  /etc/passwd
+   13  cat  /etc/passwd
+   14  useradd ahmad -c "hr" -e 2020-1-1
+   15  useradd ahmad -c "hr" -e 2020-1-1 -p u8u8u8
+   16  usermod  ahmad -c "hr" -e 2020-1-1 -p u8u8u8
+   17  cat  /etc/passwd
+   18  cat  /etc/shadows
+   19  cat  /etc/shadow
+   20  passwd ali
+   21  deluser ali
+   22  deluser zaid
+   23  deluser ahmad
+   24  cat  /etc/passwd
+   25  useradd ali  -c "HR,Manager" -e 2025-1-1 -p alibaba@s1
+   26  useradd salem  -c "CEO" -e 2025-1-1 -p alibaba@s1
+   27  useradd raghed  -c "HR" -e 2025-1-1 -p alibaba@s1
+   28  useradd sarah  -c "sales" -e 2025-1-1 -p alibaba@s1
+   29  useradd abdullah  -c "shipping" -e 2025-1-1 -p alibaba@s1
+   30  useradd deem  -c "HR" -e 2025-1-1 -p alibaba@s1
+   31  useradd khalid  -c "finance,HR" -e 2025-1-1 -p alibaba@s1
+   32  useradd norah  -c "finance" -e 2025-1-1 -p alibaba@s1
+   33  useradd raneem  -c "finance" -e 2025-1-1 -p alibaba@s1
+   34  usermod  raneem  -c "sales" -e 2025-1-1 -p alibaba@s1
+   35  vim createuser.sh
+   36  history
