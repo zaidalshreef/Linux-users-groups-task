@@ -10,5 +10,5 @@
 
 ![image](https://user-images.githubusercontent.com/85888419/195319766-b305a26b-be0a-4e80-abc5-fe1e256bd500.png)
 
-After finising the lab take screen shots of the /etc/passwd & /etc/shadow & /etc/group. Then save history output to a file and then upload the three pictures and the text file to the forked repo and then create a pull request. 
+After finishing the lab take screen shots of the /etc/passwd & /etc/shadow & /etc/group. Then save history output to a file and then upload the three pictures and the text file to the forked repo and then create a pull request. 
 
