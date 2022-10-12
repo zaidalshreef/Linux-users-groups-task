@@ -6,6 +6,6 @@
 
 ## After creating users:
   - Create 6 groups and add each user to its respective group.
-  - Add this password **Alibabastudent001** to CEO,HR, and sales groups 
+  - Add this password **Alibabastudent001** to CEO,HR, and SALES groups 
 
 ![image](https://user-images.githubusercontent.com/85888419/195319766-b305a26b-be0a-4e80-abc5-fe1e256bd500.png)
