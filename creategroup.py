@@ -1,6 +1,5 @@
 import os
 import sys
-from tokenize import group
 
 group_name = sys.argv[1]
 
