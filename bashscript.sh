@@ -6,19 +6,21 @@ echo " $UID $USER"
 
 echo "$(whoami)"
 
-if [ "$(whoami)" = "yaman" ]
+if [ $? -ne 0 ] 
 then
-     echo "you are yaman"
-     else
-     echo "you are not yaman"
+   echo "not success"
+else
+  echo "success"
 fi
+
+
+test "$(whoami)" = "yaman" && echo "yes" || echo "not yaman"   
 
 for i in {1..3}
 do
-   
-    read -p "enter user name: " name
+    read -p "Enter user name: " name
     read -p "EXPIRATION_DAY: " EXPIRATION_DAY
-    read -p "enter ROLE:" ROLE
+    read -p "Enter ROLE:" ROLE
     sudo useradd "$name" -c "$ROLE" -e $EXPIRATION_DAY;
     sudo passwd  "$name";
 done
