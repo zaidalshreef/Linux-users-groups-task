@@ -1,5 +1,10 @@
 import os
+import subprocess
 import sys
+
+if(len(sys.argv) == 1):
+    pass
+     
 
 group_name = sys.argv[1]
 
