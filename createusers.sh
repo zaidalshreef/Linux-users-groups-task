@@ -4,7 +4,7 @@
 i=1;
 j=$#;
 
-dataAfter3year=$(date -d +3years +%Y-%m-%d)
+    dataAfter3year=$(date -d +3years +%Y-%m-%d)
 
 while [ $i -le $j ] 
 do

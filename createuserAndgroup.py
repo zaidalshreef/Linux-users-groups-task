@@ -1,28 +1,32 @@
 import os
-import sys
+from collections import defaultdict
+import datetime
+from dateutil.relativedelta import relativedelta
+  
+# adding years to a particular date
+dataAfter3year = str(datetime.date.today()+ relativedelta(years=3))
+print(dataAfter3year)
 
-group_name = sys.argv[1]
+with open("userlist.txt","r") as file:
+    groups=defaultdict(list)
+    for line in file:
+        userinfo = line
+        data = userinfo[0:-1].split(" ")
+        name = data[0]
+        role = data[1]
+        password = data[2]
+        roles = role.split(",")
+        commant_role = ",".join(roles)
+        print(commant_role)
+        os.system(f"sudo -S useradd {name} -c {commant_role} -e {dataAfter3year}")
+        os.system(f"echo {name}:{password} | sudo -S chpasswd")
+        for group in roles:
+            groups[group].append(name)
+    for group_name,users in groups.items():
+      os.system(f"sudo -S groupadd {group_name}")
+      os.system(f"sudo -S mkdir ~/{group_name}")
+      os.system(f"sudo -S chgrp {group_name} ~/{group_name}")
+      users_name = ",".join(users)
+      os.system(f"sudo -S gpasswd -M {users_name} {group_name}")
+      print (f"{group_name} ")
 
-with open("userlist.txt") as file:
-    pass
-
-
-
-os.system(f"sudo -S groupadd {group_name}")
-
-users = ''
-for i in range(2, len(sys.argv)):
-    if sys.argv[i] != sys.argv[len(sys.argv)-1]:
-        users += sys.argv[i]+","
-    else:
-        users += sys.argv[i]
-
-os.system(f"sudo -S gpasswd -M {users} {group_name}")
-
-password = input("Enter y/yes to add password to the group: ")
-
-if (password.lower() == "y" or password.lower() == "yes"):
-    os.system(f"sudo -S gpasswd {group_name}")
-
-
-print(users)
