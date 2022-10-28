@@ -1,3 +1,6 @@
-fars HR,sales 12345
-fars2 HR,sales 12345
-fars3 HR,sales 12345
+Faisal HR,shipping 12345
+Ghanem engineer,sales 12345
+Fahad instructer,HQ 32154
+Bader developer,IT 54231
+Salamah engineer,Ops 42352
+Mohammed HR,sales 43252
